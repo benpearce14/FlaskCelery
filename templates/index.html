@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block head %}
+<title>Flask+Celery - Example</title>
+{% endblock %} {% block body %}
+<div class="content">
+	<h1 style="text-align: center">Flask+Celery - Example</h1>
+	<div class="center">
+		<form action="/insert_data" method="post">
+			<button type="submit" action="/insert_data">Add Data</button>
+		</form>
+		<form action="/delete_all" method="post">
+			<button type="submit" action="/delete_all">Clear Data</button>
+		</form>
+	</div>
+	<br />
+	{% if results|length < 1 %}
+	<h4 style="text-align: center">There are no results to display</h4>
+	{% else %}
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>String</th>
+			<th>Created At</th>
+		</tr>
+		{% for result in results %}
+		<tr>
+			<td>{{ result.id }}</td>
+			<td>{{ result.data }}</td>
+			<td>{{ result.date_created }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	{% endif %}
+</div>
+{% endblock %}
