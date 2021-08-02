@@ -4,6 +4,10 @@ This is a simple application to demonstrate how Celery can be integrated into a 
 
 ### Setup Guide:
 
+Install Python >3.9 (already installed on UNIX machines)
+
+Install RabbitMQ: `brew install rabbitmq`
+
 Install virtualenv: `pip3 install virtualenv`
 
 To create virtual environment: `virtualenv env`
