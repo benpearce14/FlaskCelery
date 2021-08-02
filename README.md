@@ -1,3 +1,9 @@
+## Flask + Celery - Example
+
+This is a simple application to demonstrate how Celery can be integrated into a Flask application to run database tasks asyncronously. By allowing Celery to handle time consuming tasks like adding or removing database entries, the application does not hang - thus dramatically improving an enduser's overall experience.
+
+### Setup Guide:
+
 Install virtualenv: `pip3 install virtualenv`
 
 To create virtual environment: `virtualenv env`
