@@ -7,6 +7,10 @@ table {
 	margin: 0 auto;
 }
 
+a {
+	margin: 10px;
+}
+
 td {
 	text-align: center;
 	padding: 10px;

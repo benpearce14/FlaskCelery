@@ -4,12 +4,8 @@
 <div class="content">
 	<h1 style="text-align: center">Flask+Celery - Example</h1>
 	<div class="center">
-		<form action="/insert_data" method="post">
-			<button type="submit" action="/insert_data">Add Data</button>
-		</form>
-		<form action="/delete_all" method="post">
-			<button type="submit" action="/delete_all">Clear Data</button>
-		</form>
+		<a href="/insert_data">Add Data</a>
+		<a href="/delete_all">Clear Data</a>
 	</div>
 	<br />
 	{% if results|length < 1 %}

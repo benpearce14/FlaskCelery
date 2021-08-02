@@ -31,13 +31,13 @@ def process(name):
     return "Async Request Sent"
 
 
-@app.route('/insert_data', methods=["POST", "GET"])
+@app.route('/insert_data')
 def insert_data():
     insert.delay()
     return "Async Request to Insert Data Sent"
 
 
-@app.route('/delete_all', methods=["POST", "GET"])
+@app.route('/delete_all')
 def delete_all():
     delete.delay()
     return "Async Request to Delete Data Sent"
